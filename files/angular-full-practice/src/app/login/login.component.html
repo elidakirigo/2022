@@ -1,0 +1,32 @@
+<div class="container" style="width: 60%;margin-top: 10px;">
+  <form  #loginForm = "ngForm"  (ngSubmit)="saveLogin(loginForm);">
+    <legend style="text-align: center;">login</legend>
+
+    <div class="form-group">
+      <label for="">label</label>
+      <input type="text"name="name" class="form-control" id="" placeholder="Input field" [(ngModel)]='fullname'><br>
+      <input type="password" name="pwd" class="form-control" id="" placeholder="Input field" [(ngModel)]='password'>
+    </div>
+
+    <p id="change" style="text-decoration: underline;color: darkblue;cursor: pointer;">or signup?</p>
+
+    <button type="submit" class="btn btn-primary">login</button>
+  </form>
+</div>
+<div class="container" style="width: 60%;margin-top: 10px;">
+  <form  #signUpForm = "ngForm"  (ngSubmit)="saveSignUp(signUpForm);">
+    <legend style="text-align: center;">sign up</legend>
+
+    <div class="form-group">
+      <label for="">label</label>
+      <input type="text" name="name" class="form-control" id="" placeholder="Input field" [(ngModel)]='fullname'><br>
+      <input type="password"name="pwd" class="form-control" id="" placeholder="Input field" [(ngModel)]='password'>
+    </div>
+
+    <p id="change" style="text-decoration: underline;color: darkblue;cursor: pointer;">or have an account ?.....login?
+    </p>
+
+
+    <button type="submit" class="btn btn-primary">sign up</button>
+  </form>
+</div>

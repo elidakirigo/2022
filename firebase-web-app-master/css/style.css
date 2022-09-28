@@ -1,0 +1,63 @@
+body {
+    background-color: #423350;
+}
+
+.mainDiv {
+    width: 380px;
+    height: 120px;
+    background-color: #fff;
+    padding: 2em;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    text-transform: capitalize;
+    border-radius: 2px;
+    color: #555555;
+}
+
+textarea {
+    width: 100%;
+    outline: none;
+    border: none;
+}
+
+#button {
+    border-radius: 50%;
+    background-color: #1175cc;
+    padding: 1.5em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.fa {
+    font-size: 120px;
+    color: #fff;
+}
+
+section {
+    position: relative;
+    left: 50px;
+    top: 90px;
+    background-color: #fff;
+    display: inline-block;
+    padding: 1em;
+    border-radius: 5px;
+}
+section h1 , th{
+    text-transform: uppercase;
+}
+table td, table{
+    padding: 1em;
+    border-radius: 2px;
+    border: 1px solid grey;
+}
+.button {
+    background-color: black;
+    padding: .5em .8em;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    text-transform: capitalize;
+    cursor: pointer;
+}

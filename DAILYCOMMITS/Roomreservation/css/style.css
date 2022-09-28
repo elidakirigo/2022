@@ -1,0 +1,20 @@
+h1{
+    text-align:center;
+    font-family:Aharoni;
+    color:orange;
+}
+h2{
+    text-align:center;
+    font-family:Buxton Sketch;
+    color:orange;
+}
+body{
+    background-color:black;
+}
+form{
+    color:white;
+    text-align:center;
+}
+select{
+    text-align:center;
+}

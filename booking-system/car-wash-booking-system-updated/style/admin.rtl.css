@@ -1,0 +1,13 @@
+/******************************************************************************/
+/* Icon dropdown list														  */
+/******************************************************************************/
+
+		#dk_container_cbs_icon .dk_options_inner a span+span
+		{
+			text-align:left;
+		}
+
+#posts-filter .tablenav.top .actions span
+{
+	float:right;
+}

@@ -1,0 +1,16 @@
+button {
+    padding: 1em;
+    width: 10em;
+    background: orangered;
+    font: bold 1em cursive;
+    border: 1px solid white;
+    color: white;
+}
+button:hover {
+    border: 1px solid orangered;
+    background: white;
+    color: orangered;
+}
+h1 {
+    font: bold 2em cursive;
+}

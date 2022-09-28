@@ -1,0 +1,29 @@
+.panel .panel-heading , .panel .panel-footer{
+    background: green;
+    color: azure;
+    font: 700 15px cursive;
+    text-align: center;
+}
+.s {
+    border-right : 2px solid orange;
+}
+.panel-body {
+    font: 700 15px cursive;
+    text-align: center;
+    border-bottom: 2px solid #80808057;
+}
+.cost {
+    text-decoration: underline;
+}
+.s h5 {
+    border: 1px solid  black;
+    padding: .4em;
+    cursor: pointer;
+    margin: 0;
+    background: green;
+    color: aliceblue;
+}
+.s h5:hover {
+    background: transparent;
+    color: orangered;
+}

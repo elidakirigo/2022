@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+	<head>
+		<title>Car Wash Booking System | Documentation</title>
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1.0" name="viewport">
+		<link rel="stylesheet" href="style/flexnav.css"/>
+		<link rel="stylesheet" href="style/fancybox/jquery.fancybox.css"/>
+		<link rel="stylesheet" href="style/base.css"/>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700"/>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500"/>	
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic"/>
+	</head>
+
+	<body>
+
+		<div class="doc-header doc-clear-fix">
+
+			<div>
+
+				<div class="doc-clear-fix">
+
+					<div class="doc-header-logo">
+						<a href="http://quanticalabs.com" target="_blank">
+							<img src="image/logo.png" alt=""/>
+						</a>
+					</div>
+
+					<div class="doc-top-menu-default"><ul class="with-js"><li><a href="http://quanticalabs.com" target="_blank">Home </a></li><li><a href="http://themeforest.net/user/quanticalabs/portfolio?ref=quanticalabs" target="_blank">Portfolio </a></li><li><a href="http://support.quanticalabs.com/forum" target="_blank">Support Forum</a></li></ul></div>
+
+				</div>
+
+				<div class="menu-button">Menu</div>
+				<nav class="doc-menu-responsive">
+					<ul class="flexnav" data-breakpoint="800"><li><a href="#doc-about" target="_self">About</a></li><li><a href="#doc-installing-plugin" target="_self">Installing the plugin</a><ul class="with-js"><li><a href="#doc-installing-plugin-via-dashboard" target="_self">Installing the plugin via dashboard</a></li><li><a href="#doc-installing-plugin-via-ftp" target="_self">Installing the plugin via FTP</a></li></ul></li><li><a href="#doc-importing-dummy-content" target="_self">Importing dummy content</a></li><li><a href="#doc-quick-start" target="_self">Quick start</a></li><li><a href="#doc-modules" target="_self">Modules</a><ul class="with-js"><li><a href="#doc-locations" target="_self">Locations</a><ul class="with-js"><li><a href="#doc-location-edit" target="_self">Edit location</a></li></ul></li><li><a href="#doc-vehicles" target="_self">Vehicles</a><ul class="with-js"><li><a href="#doc-vehicle-edit" target="_self">Edit vehicle</a></li></ul></li><li><a href="#doc-services" target="_self">Services</a><ul class="with-js"><li><a href="#doc-service-edit" target="_self">Edit service</a></li></ul></li><li><a href="#doc-packages" target="_self">Packages</a><ul class="with-js"><li><a href="#doc-package-edit" target="_self">Edit package</a></li></ul></li><li><a href="#doc-bookings" target="_self">Bookings</a><ul class="with-js"><li><a href="#doc-booking-view" target="_self">View booking</a></li><li><a href="#doc-booking-state" target="_self">Booking states</a></li></ul></li><li><a href="#doc-coupons" target="_self">Coupons</a><ul class="with-js"><li><a href="#doc-coupon-edit" target="_self">Edit coupon</a></li><li><a href="#doc-coupon-generate" target="_self">Generate coupons</a></li></ul></li></ul></li><li><a href="#doc-internationalization" target="_self">Internationalization</a></li><li><a href="#doc-files-structure" target="_self">Files structure</a></li><li><a href="#doc-credits" target="_self">Credits</a><ul class="with-js"><li><a href="#doc-credits-fonts" target="_self">Fonts</a></li></ul></li><li><a href="#doc-version-history" target="_self">Version history</a></li><li><a href="#doc-support" target="_self">Support</a></li><li><a href="http://quanticalabs.com" target="_blank">Home </a></li><li><a href="http://themeforest.net/user/quanticalabs/portfolio?ref=quanticalabs" target="_blank">Portfolio </a></li><li><a href="http://support.quanticalabs.com/forum" target="_blank">Support Forum</a></li></ul>
+				</nav>
+
+			</div>
+
+		</div>
+
+		<div class="doc-content  doc-clear-fix">
+
+			<div class="doc-main">
+
+				<div class="doc-content-left">
+
+					<div class="doc-main-menu-default">
+						<ul class="with-js"><li><a href="#doc-about" target="_self">About</a></li><li><a href="#doc-installing-plugin" target="_self">Installing the plugin</a><ul class="with-js"><li><a href="#doc-installing-plugin-via-dashboard" target="_self">Installing the plugin via dashboard</a></li><li><a href="#doc-installing-plugin-via-ftp" target="_self">Installing the plugin via FTP</a></li></ul></li><li><a href="#doc-importing-dummy-content" target="_self">Importing dummy content</a></li><li><a href="#doc-quick-start" target="_self">Quick start</a></li><li><a href="#doc-modules" target="_self">Modules</a><ul class="with-js"><li><a href="#doc-locations" target="_self">Locations</a><ul class="with-js"><li><a href="#doc-location-edit" target="_self">Edit location</a></li></ul></li><li><a href="#doc-vehicles" target="_self">Vehicles</a><ul class="with-js"><li><a href="#doc-vehicle-edit" target="_self">Edit vehicle</a></li></ul></li><li><a href="#doc-services" target="_self">Services</a><ul class="with-js"><li><a href="#doc-service-edit" target="_self">Edit service</a></li></ul></li><li><a href="#doc-packages" target="_self">Packages</a><ul class="with-js"><li><a href="#doc-package-edit" target="_self">Edit package</a></li></ul></li><li><a href="#doc-bookings" target="_self">Bookings</a><ul class="with-js"><li><a href="#doc-booking-view" target="_self">View booking</a></li><li><a href="#doc-booking-state" target="_self">Booking states</a></li></ul></li><li><a href="#doc-coupons" target="_self">Coupons</a><ul class="with-js"><li><a href="#doc-coupon-edit" target="_self">Edit coupon</a></li><li><a href="#doc-coupon-generate" target="_self">Generate coupons</a></li></ul></li></ul></li><li><a href="#doc-internationalization" target="_self">Internationalization</a></li><li><a href="#doc-files-structure" target="_self">Files structure</a></li><li><a href="#doc-credits" target="_self">Credits</a><ul class="with-js"><li><a href="#doc-credits-fonts" target="_self">Fonts</a></li></ul></li><li><a href="#doc-version-history" target="_self">Version history</a></li><li><a href="#doc-support" target="_self">Support</a></li></ul>
+					</div>
+
+				</div>
+
+				<div class="doc-content-right">
+					
+					<h1 class="doc-margin-top-0 doc-margin-bottom-0">Car Wash Booking System</h1>
+					<p class="doc-margin-top-0">Car Wash Booking System for WordPress | Created: 05.11.2015 | Latest update: 08.07.2021</p>
+
+					<!-- -->
+
+					<div id="about" class="doc-section">
+
+						<h2>About</h2>
+
+						<p>Car Wash Booking System is a powerful, easy to configure and customize, car wash booking plugin for WordPress. It will help you to setup a car wash reservation system for any of your websites.</p>
+						<h3>Backend features</h3>
+
+						<h4>Locations module</h4>
+						<ul>
+							<li>Create your own booking system based on locations.</li>
+							<li>Each location is an individual booking calendar and form.</li>
+							<li>Unlimited locations with individual settings for each of them.</li>
+							<li>Generate a shortcode to insert the booking form and booking calendar into a page or post.</li>
+							<li>Specify how services are displayed. Services, will display &#039;a la carte&#039; services and will not display packages. Packages, will display packages and related services only. Packages and Services will display both packages and all services.</li>
+							<li>Set the currency from among 160 world currencies.</li>
+							<li>Set the number of slots (carwash posts per location) in which services can be provided.</li>
+							<li>Specify how many services will be shown when the page first loads with &quot;Show More&quot; button at the bottom of the list or display all.</li>
+							<li>Specify how many time slots will be shown in calendar when the page first loads with "Show More" button at the bottom of the list or display all.</li>
+							<li>Select whether to reset the form after a successful booking or not.</li>
+							<li>Define custom summary text for your clients.</li>
+							<li>Specify working days and business hours.</li>
+							<li>Exclude holidays or custom dates from the calendar.</li>
+							<li>Select the time format to be displayed in calendar.</li>
+							<li>Select the date format to be displayed in booking summary.</li>
+							<li>Set booking slot size in minutes e.g. 30 min slots will show open slots at 8:00, 8:30, 9:00 etc.</li>
+							<li>Set advance booking period to allow booking up to number of days in advance.</li>
+							<li>Set e-mail account sender details for reservation confirmation via e-mail.</li>
+							<li>Define the address and contact details for location.</li>
+							<li>Customize booking form per location.</li>
+						</ul>
+
+						<h4>Vehicles module</h4>
+						<ul>
+							<li>Add various types of vehicles with different level of prices or duration of the service.</li>
+							<li>Set the name of your vehicle type and assign one of 24 available vehicle type icons.</li>
+							<li>Unlimited vehicle types.</li>
+						</ul>
+
+						<h4>Services module</h4>
+						<ul>
+							<li>Add your service - set the name, description and item order.</li>
+							<li>Enter the base price of the service in value.</li>
+							<li>Enter the base duration of the service in minutes.</li>
+							<li>Enter additional details depending on the location and vehicle type.</li>
+							<li>Set the availability of the service for location and vehicle type.</li>
+							<li>Set the price of the service for location and vehicle type.</li>
+							<li>Set the duration of the service for location and vehicle type.</li>
+							<li>Unlimited services.</li>
+						</ul>
+
+						<h4>Packages module</h4>
+						<ul>
+							<li>Add your package - set the name and item order.</li>
+							<li>Add services to the package or define them as related (as add-on option for the package).</li>
+							<li>Enter additional details depending on the location and vehicle type.</li>
+							<li>Set the availability of the package for location and vehicle type.</li>
+							<li>Set the price of the package for location and vehicle type or use the price calculated based on the sum of the prices of services included.</li>
+							<li>Unlimited packages.</li>
+						</ul>
+
+						<h4>Bookings module</h4>
+						<ul>
+							<li>Browse new, new &amp; accepted, accepted, finished or rejected bookings.</li>
+							<li>Sort by name, location, status, price, duration, booking date or client.</li>
+							<li>Filter by date, location and status.</li>
+							<li>View single booking details with status, duration, price, location, vehicle type, selected package, selected services and client details.</li>
+							<li>Change single booking status to accepted, rejected or finished.</li>
+						</ul>
+
+						<h3>Frontend features</h3>
+						<ul>
+							<li>Responsive design.</li>
+							<li>Flex based grid with support for older browsers.</li>
+							<li>Ajax driven.</li>
+							<li>Step based form.</li>
+							<li>Unlimited booking systems (locations).</li>
+							<li>Different vehicle types, packages, services, prices, durations, settings, color scheme per booking system (location).</li>
+							<li>Different packages, services, prices, durations per vehicle type.</li>
+							<li>Different wash menu types - Services, will display all services (&#039;a la carte menu&#039;) and will not display packages. Packages, will display packages and related services only. Packages and Services will display both packages and all services.</li>
+							<li>Vehicle types with icons.</li>
+							<li>Packages with price calculated or defined (discounts).</li>
+							<li>Packages with total duration calculated.</li>
+							<li>Packages with related add-ons.</li>
+							<li>Services with description, duration and price.</li>
+							<li>&#039;Show More&#039; buttons for services and calendar.</li>
+							<li>Time slot based booking.</li>
+							<li>Booking summary with date, time, calculated duration and total price.</li>
+						</ul>
+
+						<h3>Other features</h3>
+						<ul>
+							<li>Demo content available with one click importer.</li>
+							<li>Fully translatable with .po / .mo files.</li>
+						</ul>
+
+					</div>
+
+					<!-- -->
+
+					<div id="installing-plugin" class="doc-section">
+
+						<h2>Installing the plugin</h2>
+						<p>
+							<a href="quanticalabs.com/home/wordpress-plugin-installation/" target="_blank">
+								<img src="http://www.quanticalabs.com/Envato/Common/wordpress_plugin_installation.png" alt=""/>
+							</a>
+						</p>          
+						<h3 id="installing-plugin-via-dashboard">Installing the plugin via dashboard</h3>
+						<p>To install the plugin via WordPress dashboard, please follow the steps below:</p>
+						<ol>
+							<li>Download the plugin (select <b>Installable WordPress file only</b> option) from the CodeCanyon to your computer. You will get file in ZIP format.</li>
+							<li>Go to WordPress dashboard and navigate to <b>Plugins / Add new</b>.</li>
+							<li>Click on <b>Upload plugin</b> button.</li>
+							<li>Upload ZIP package from the first point.</li>
+							<li>Click the <b>Activate</b> link that appears below the plugin&#039;s title.</li>
+						</ol>
+
+						<h3 id="installing-plugin-via-ftp">Installing the plugin via FTP</h3>
+						<p>To install the plugin via FTP, please follow the steps below:</p>
+						<ol>
+							<li>Download the plugin (select <b>Installable WordPress file only</b> option) from the CodeCanyon to your computer. You will get file in ZIP format.</li>
+							<li>Unzip it to access the uncompressed files.</li>
+							<li>Connect to your server using your preferred FTP application (e.g FileZilla).</li>
+							<li>Navigate to the <b>wp-content/plugins</b> folder within the WordPress installation on your website.</li>
+							<li>Upload uncompressed plugin to this location via FTP.</li>
+							<li>Go to <b>WordPress dashboard</b> and click on <b>Plugins</b> menu.</li>
+							<li>Click on <b>Activate</b> link.</li>
+							<li>Now your plugin is installed and ready to work.</li>
+						</ol>
+					</div>
+
+					<!-- -->
+
+					<div id="importing-dummy-content" class="doc-section">
+
+						<h2>Importing dummy content</h2>
+						<p>To start importing demo content, please follow the steps below:</p>
+						<ul>
+							<li>Go to <b>Settings / Car Wash Booking System</b> <span class="doc-number">1</span>.</li>
+							<li>Click on <b>Import dummy content</b> <span class="doc-number">2</span> tab.</li>
+							<li>Click on <b>Import</b> <span class="doc-number">3</span> button.</li>
+						</ul>
+						<a href="screen/1.png" class="fancybox">
+							<img src="screen/1.png" alt=""/>
+						</a>
+						<p>
+							To display booking system on page/post, go to location, copy shortcode and paste it into selected page/post.<br/>
+							Please note that this operation is not reversible. It can takes a few seconds, depending on server speed.
+						</p>
+
+					</div>
+
+					<!-- -->
+
+					<div id="quick-start" class="doc-section">
+
+						<h2>Quick start</h2>
+						<p>To start creating your own booking system you have to:</p>
+						<ol>
+							<li>Add to the system at least one <b><a href="#doc-vehicles">Vehicle Type</a></b> (this step is required).</li>
+							<li>Add to the plugin at least one <b><a href="#doc-locations">Location</a></b> (this step is required).</li>
+							<li>Add to the plugin at least one <b><a href="#doc-services">Service</a></b> (this step is required).</li>
+							<li>Add to the plugin at least one <b><a href="#doc-packages">Package</a></b> (this step is optional if you choose displaying <b>Services</b> only in <b>Locations</b>).</li>
+							<li>Copy the shortcode created in <b><a href="#doc-locations">Location</a></b> to the page/post on which booking system has to be displayed.</li>
+						</ol>
+
+					</div>
+
+					<!-- -->
+
+					<div id="modules">
+						<h2>Modules</h2>
+
+						<!-- -->
+
+						<h3 id="locations">Locations</h3>
+						<p><b>Locations</b> module allows to define places of car washes used in system.</p>
+						<h4 id="location-edit">Edit location</h4>
+						<p>During adding/editing location you can set following details:</p>
+						<ul>
+							<li>
+								<p>In <b>General</b> box:</p>
+								<ul>
+									<li><b>Displaying content</b> <span class="doc-number">1</span> - defines in which way services have to be displayed (as list of services, packages or both).</li>
+									<li><b>Currency</b> <span class="doc-number">2</span>  - name of currency used in this location.</li>
+									<li><b>Number of slots</b> <span class="doc-number">3</span>  - number of available car wash points in location.</li>
+									<li><b>Number of services to display</b> <span class="doc-number">4</span>  - specifies, how many services have to be displayed by default on services list.</li>
+									<li><b>Number of time slots to display</b> <span class="doc-number">5</span>   - specifies, how many time slots (hours and minutes) have to be displayed by default in calendar.</li>
+									<li><b>Reset form</b> <span class="doc-number">6</span>  - enable/disable reset (clear) form after successful submission.</li>
+									<li><b>Summary text</b> <span class="doc-number">7</span>  - defines text displayed above Submit button.</li>
+								</ul>
+								<a href="screen/5.png" class="fancybox">
+									<img src="screen/5.png" alt=""/>
+								</a>							
+							</li>
+							<li>
+								<p>In <b>Date &amp; time</b> box you can set:</p>
+								<ul>
+									<li><b>Business hours</b> <span class="doc-number">1</span> - specifies working hours from monday to sunday.</li>
+									<li><b>Exclude dates</b> <span class="doc-number">2</span> - specifies date (dates range) not available for booking.</li>
+									<li><b>Time format</b> <span class="doc-number">3</span> - specifies time format: 12 or 24 - hours.</li>
+									<li><b>Date format</b> <span class="doc-number">4</span> - specifies date format. More info about formatting is avilable here: <a href="https://codex.wordpress.org/Formatting_Date_and_Time" target="_blank">https://codex.wordpress.org/Formatting_Date_and_Time</a>.</li>
+									<li><b>Booking slot size</b> <span class="doc-number">5</span> - specifies interval of available hours (in minutes).</li>
+									<li><b>Advanced booking period</b> <span class="doc-number">6</span> - specifies number of days in which booking is available.</li>
+								</ul>
+								<a href="screen/6.png" class="fancybox">
+									<img src="screen/6.png" alt=""/>
+								</a>							
+							</li>
+							<li>
+								<p>In <b>Email account</b> box <span class="doc-number">1</span> you can set all details of your e-mail account which are needed to send  the message. The plugin sends e-mail messages when:</p>
+								<ul>
+									<li><b>New booking is received</b> - message is send to addreses defined in <b>Recipient e-mail addresses</b> <span class="doc-number">2</span> field and to e-mail given by client.</li>
+									<li><b>Status of booking has been changed</b> - message is send to client&#039;s e-mail.</li>
+								</ul>
+								<a href="screen/7.png" class="fancybox">
+									<img src="screen/7.png" alt=""/>
+								</a>	
+							</li>	
+							<li>
+								<p>In <b>Address</b> box <span class="doc-number">1</span> you can set address details like company name, street etc.</p>
+								<a href="screen/8.png" class="fancybox">
+									<img src="screen/8.png" alt=""/>
+								</a>	
+								<p>These details are displayed in email message.</p>
+							</li>
+							<li>
+								<p>In <b>Colors</b> box <span class="doc-number">1</span> you can overwrite all default colors used in the plugin. Colors are organized in 10 groups. Meaning of each group is described on attached (in dashboard) image.</p>
+								<a href="screen/9.png" class="fancybox">
+									<img src="screen/9.png" alt=""/>
+								</a>	
+							</li>		
+						</ul>
+
+						<!-- -->
+
+						<h3 id="vehicles">Vehicles</h3>
+						<p><b>Vehicles</b> module allows to manage all types of vehicles defined in the system</p>
+						<h4 id="vehicle-edit">Edit vehicle</h4>
+						<p>During adding/editing type of vehicle you can set name <span class="doc-number">1</span> and choose one from 24 icons <span class="doc-number">2</span>:</p>
+						<a href="screen/2.png" class="fancybox">
+							<img src="screen/2.png" alt=""/>
+						</a>
+						<p>All vehicles are sorted by the <b>Menu order</b> <span class="doc-number">3</span> and the <b>Name</b> <span class="doc-number">1</span>.</p>
+
+						<!-- -->
+
+						<h3 id="services">Services</h3>
+						<p><b>Services</b> module allows to manage services defined in the system.</p>
+						<h4 id="service-edit">Edit service</h4>
+						<p>During adding/editing service you can set following details:</p>
+						<ul>
+							<li><b>Name</b> <span class="doc-number">1</span> - as a post title.</li>
+							<li><b>Description</b> <span class="doc-number">2</span> - as a post content.</li>
+							<li>
+								<b>Base price</b> <span class="doc-number">3</span> - in <b>General</b> box.<br/>
+								This value is used when the price for the location and vehicle type <span class="doc-number">5</span> is not set.
+							</li>
+							<li>
+								<b>Base duration</b> <span class="doc-number">4</span> - in <b>General</b> box.<br/>
+								This value is used when the price for the location and vehicle type <span class="doc-number">5</span> is not set.</li>
+							<li>
+								<b>Price, availability and duration depending on location and vehicle type</b> <span class="doc-number">5</span> - in <b>Details</b> box. 
+								Value 0 or empty field (for price and duration) means that base price and duration will be used.
+							</li>
+						</ul>
+						<a href="screen/3.png" class="fancybox">
+							<img src="screen/3.png" alt=""/>
+						</a>				
+						<p>All services are sorted by the <b>Menu order</b> <span class="doc-number">6</span> and the <b>Name</b> <span class="doc-number">1</span>.</p> 
+
+						<!-- -->
+
+						<h3 id="packages">Packages</h3>
+						<p><b>Packages</b> module allows to manage packages defined in the system.</p>
+						<h4 id="package-edit">Edit package</h4>
+						<p>During adding/editing package you can set the following details:</p>	
+						<ul>
+							<li><b>Name</b> <span class="doc-number">1</span> - as a post title.</li>
+							<li>
+								<b>Services</b> <span class="doc-number">2</span> - in box named <b>Services</b>.<br/>
+								You have to add at least one service to the package. The packages without services are unusable and won&#039;t be displayed. The service can be added to the package in three ways:
+								<ul>
+									<li><b>Service included</b> to the package,</li>
+									<li><b>Service not included</b> to the package,</li>
+									<li><b>Service related</b> with the package. Such service is not a part of the package, but is available after its selecting.</li>
+								</ul>
+							</li>
+							<li>
+								<b>Details</b> <span class="doc-number">3</span> - in box named <b>Details</b>.<br/>
+								This box allows to set availability of the package and the price for a selected location and vehicle.<br/>
+							</li>
+						</ul>
+						<a href="screen/4.png" class="fancybox">
+							<img src="screen/4.png" alt=""/>
+						</a>				
+						<p>All packages are sorted by the <b>Menu order</b> <span class="doc-number">4</span> and the <b>Name</b> <span class="doc-number">1</span>.</p>
+
+						<!-- -->
+
+						<h3 id="bookings">Bookings</h3>
+						<p><b>Bookings</b> module allows to manage bookings sent by clients.</p>
+						<h4 id="booking-view">View booking</h4>
+						<p>Booking view includes all needed details entered by the client during sending form.<br/>These data are organized in three boxes:</p>
+						<ul>
+							<li>
+								<p><b>General</b> <span class="doc-number">1</span>.</p>
+								<a href="screen/10.png" class="fancybox">
+									<img src="screen/10.png" alt=""/>
+								</a>
+							</li>
+							<li>
+								<p><b>Details</b> <span class="doc-number">2</span>.</p>
+								<a href="screen/11.png" class="fancybox">
+									<img src="screen/11.png" alt=""/>
+								</a>
+							</li>
+							<li>
+								<p><b>Client details</b> <span class="doc-number">3</span>.</p>
+								<a href="screen/12.png" class="fancybox">
+									<img src="screen/12.png" alt=""/>
+								</a>
+							</li>
+						</ul>
+						<h4 id="booking-state">Booking states</h4>
+						<p>Each booking can be set up in one of the following state:</p>	
+						<ul>
+							<li><b>New</b> - default state for new sending bookings.</li>
+							<li><b>Accepted</b> - booking accepted by operator.</li>
+							<li><b>Rejected</b> - booking rejected by operator (booking date is available back).</li>
+							<li><b>Finished</b> - booking completed.</li>
+						</ul>
+						<p>State of booking can be changed during editing. Plugin sends a new email after this to the client.</p>
+
+						<h3 id="coupons">Coupons</h3>
+						<p><b>Coupons</b> module allows to manage discount coupons.</p>           
+						<h4 id="coupon-edit">Edit coupon</h4>
+						<p>During adding/editing coupon you can set the following details:</p>	
+						<ul>
+							<li><b>Coupon code</b> <span class="doc-number">1</span> - code of the coupon,</li>
+							<li><b>Location</b> <span class="doc-number">2</span> - determines in  which location coupon will be active,</li>
+							<li><b>Usage count</b> <span class="doc-number">3</span> - current number of coupons which have been used already,</li>
+							<li><b>Usage limit</b> <span class="doc-number">4</span> - maximum allowed number of coupons,</li>
+							<li><b>Discount</b> <span class="doc-number">5</span> - percentage discount,</li>
+							<li><b>Deduction</b> <span class="doc-number">6</span> - value discount,</li>
+							<li><b>Minimal price</b> <span class="doc-number">7</span> - minimum value of order,</li>
+							<li><b>Active from</b> <span class="doc-number">8</span> - date from which coupons will be active,</li>
+							<li><b>Active to</b> <span class="doc-number">9</span> - date after which coupons will not be active</li>
+						</ul>
+						<a href="screen/13.png" class="fancybox">
+							<img src="screen/13.png" alt=""/>
+						</a>				
+						<h4 id="coupon-generate">Generate coupons</h4>
+						<p>You can generate multiple coupons by using options located in <b>Seeting / Car Wash Booking System / Generate coupon codes</b>.</p>
+
+					</div>
+
+					<!-- -->
+
+					<div id="internationalization"> 
+						<h2>Internationalization</h2>
+						<p>The plugin comes with default .po and .mo files located in <b>languages</b> folder.<br/>To translate the plugin, please follow the steps below:</p>
+						<ol>
+							<li>Download the file <b>languages/car-wash-booking-system-default.po</b> and open it via PO files editor e.g <a href="https://poedit.net/" target="_blank">Poedit</a>.</li>
+							<li>Rename file based on schema: <b>car-wash-booking-system-CODE.po</b>, where list of code for each language is available here: <a href="http://wpcentral.io/internationalization/" target="_blank">http://wpcentral.io/internationalization/</a>.</li>
+							<li>Translate all phrases to selected language.</li>
+							<li>Upload file to server.</li>
+						</ol>
+					</div>
+
+					<!-- -->
+
+					<div id="files-structure">
+						<h2>Files structure</h2>
+						<table>
+							<thead>
+								<tr>
+									<th>Path</th>
+									<th>Description</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>admin</td>
+									<td>Files used in backend.</td>
+								</tr>
+								<tr>
+									<td>class</td>
+									<td>PHP classes.</td>
+								</tr>
+								<tr>
+									<td>dummy_content</td>
+									<td>Files with demo content.</td>
+								</tr>
+								<tr>
+									<td>font</td>
+									<td>Fonts files.</td>
+								</tr>
+								<tr>
+									<td>languages</td>
+									<td>Language .po/.mo files.</td>
+								</tr>
+								<tr>
+									<td>library</td>
+									<td>PHP libraries.</td>
+								</tr>
+								<tr>
+									<td>media</td>
+									<td>Image/audio files.</td>
+								</tr>
+								<tr>
+									<td>multisite</td>
+									<td>Dynamic created files.</td>
+								</tr>
+								<tr>
+									<td>public</td>
+									<td>Files used in fronend.</td>
+								</tr>
+								<tr>
+									<td>script</td>
+									<td>Javascript libraries/plugins.</td>
+								</tr>
+								<tr>
+									<td>style</td>
+									<td>CSS files.</td>
+								</tr>
+								<tr>
+									<td>template</td>
+									<td>HTML/PHP templates.</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<!-- -->
+
+					<div>
+						<h2 id="credits">Credits</h2>
+						<h3 id="credits-fonts">Fonts</h3>
+						<p>This plugin uses fonts as below:</p>
+						<ol>
+							<li><b>Lato</b>, <a href="https://plus.google.com/106163021290874968147/about" target="_blank">Łukasz Dziedzic</a>, <a href="http://scripts.sil.org/OFL" target="_blank">SIL Open Font License, 1.1</a>, <a href="https://www.google.com/fonts/specimen/Lato" target="_blank">https://www.google.com/fonts/specimen/Lato</a></li>
+							<li><b>Vicons</b>, Victor Erixon, Do Whatever You Want License, <a href="https://dribbble.com/shots/1663443-60-Vicons-Free-Icon-Set" target="_blank">https://dribbble.com/shots/1663443-60-Vicons-Free-Icon-Set</a>,</li>
+							<li><b>Unigrid Vehicles</b>, Icojam, Extended License, <a href="https://www.iconfinder.com/iconsets/unigrid-vehicles" target="_blank">https://www.iconfinder.com/iconsets/unigrid-vehicles</a>.</li>
+						</ol>
+					</div>
+
+					<!-- -->
+
+					<div id="version-history">
+
+						<h2>Version history</h2>
+						<table>
+							<thead>
+								<tr>
+									<th style="width:20%">Release date</th>
+									<th style="width:10%">Version</th>
+									<th style="width:70%">Description</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>08.07.2021</td>
+									<td>2.4</td>
+									<td>
+										Improved coding,<br/>
+										Added option to synchronize booking statuses between plugin and wooCommerce and vice-versa,<br/>
+										Added new version of Stripe,<br/>
+										Added option to set redirection URL address in case of success and cancel payments for PayPal and Stripe,<br/>
+										Added option to set additional information for customer in e-mail message in case of all bulit-in payment methods,<br/>
+										Added option to set booking status after successful payment,<br/>
+										Added option to display associated bookings from wooCommerce and plugin and vice-versa,<br/>
+										Added option to log responses from Twilio, Nexmo, Google Calendar, Stripe and mail messages.
+									</td>
+								</tr> 				
+								<tr>
+									<td>21.12.2020</td>
+									<td>2.3</td>
+									<td>
+										Improved coding,<br/>
+										Added support for WP 5.6.
+									</td>
+								</tr> 
+								<tr>
+									<td>15.10.2020</td>
+									<td>2.2</td>
+									<td>
+										Improved coding.
+									</td>
+								</tr> 
+								<tr>
+									<td>21.08.2020</td>
+									<td>2.1</td>
+									<td>
+										Fixed few minor issues,<br/>
+										Added support for WordPress 5.5.
+									</td>
+								</tr> 
+								<tr>
+									<td>30.10.2018</td>
+									<td>2.0</td>
+									<td>
+										Fixed few minor issues,<br/>
+										Added support for wooCommerce,<br/>
+										Added &quot;Tax Rates&quot; module,<br/>
+										Added possibility to create, manage and use of coupons,<br/>
+										Added tool which allow to generated series of coupons,<br/>
+										Added support for Google Calendar,<br/>
+										Added support for Twilio and Nexmo (SMS notifications),<br/>
+										Added support for RTL mode,<br/>
+										Added option to create agreements,<br/>
+										Added option to disable first step (selecting vehicle type),<br/>
+										Added option to display booking form in carousel style,<br/>
+										Added option to display list of locations,<br/>
+										Improved calendar navigation.<br/>
+									</td>
+								</tr> 
+								<tr>
+									<td>12.12.2017</td>
+									<td>1.8</td>
+									<td>
+										Fixed few minor issues,<br/>
+										Improved look and feel of dashboard,<br/>
+										Added option which allow to generate booking report in CSV (Excel) format.
+									</td>
+								</tr> 
+								<tr>
+									<td>18.10.2017</td>
+									<td>1.7</td>
+									<td>
+										Fixed problem with saving payment details received from PayPal.<br/>
+									</td>
+								</tr> 
+								<tr>
+									<td>04.10.2017</td>
+									<td>1.6</td>
+									<td>
+										Fixed few minor bugs,<br/>
+										Improved dummy content.
+									</td>
+								</tr>  
+								<tr>
+									<td>22.09.2017</td>
+									<td>1.5</td>
+									<td>
+										Fixed few minor bugs,<br/>
+										Fixed issue with saving prices on WP 4.8.2.
+									</td>
+								</tr>  
+								<tr>
+									<td>11.07.2017</td>
+									<td>1.4</td>
+									<td>
+										Fixed few minor bugs,<br/>
+										Added support for coupons,<br/>
+										Added support for Stripe payment gateway,<br/>
+										Added possibility to create/manage an accounts of buyers,<br/>
+										Improved documentation.
+									</td>
+								</tr>                    
+								<tr>
+									<td>01.07.2016</td>
+									<td>1.3</td>
+									<td>
+										Added possibility to define breaks for a location,<br/>
+										Added possibility to enter address details by client,<br/>
+										Added possibility to set Google Maps coordinates for a location,<br/>
+										Added possibility to manage bookings from locations by selected users,<br/>
+										Fixed few minor bugs.
+									</td>
+								</tr>
+								<tr>
+									<td>02.12.2015</td>
+									<td>1.2</td>
+									<td>
+										Added support for PayPal,<br/>
+										Added possiblity to change vehicle type icon
+									</td>
+								</tr>
+								<tr>
+									<td>13.11.2015</td>
+									<td>1.1</td>
+									<td>Improved coding</td>
+								</tr>
+								<tr>
+									<td>05.11.2015</td>
+									<td>1.0</td>
+									<td>Initial release</td>
+								</tr>
+							</tbody>
+						</table>
+
+					</div>
+
+					<!-- -->
+
+					<div id="support">
+
+						<h2>Support</h2>
+
+						<p>
+							Support for all our items is conducted through our <a href="http://support.quanticalabs.com/forum" target="_blank">Support Forum</a>. 
+							Please register an account, search the forum or create a new topic, we&#039;ll answer as soon as possible.<br/>
+							We&#039;re in <b>GMT +1</b> and we aim to answer all questions within <b>24 hours</b> (Monday – Friday).
+							In some cases the waiting time can be extended to <b>48 hours</b>.
+							Support requests sent during weekends or public holidays will be processed on next Monday or the next business day.
+						</p>
+
+					</div>
+					
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="doc-footer doc-clear-fix">
+			<div class="doc-main">
+				<div class="doc-footer-copyright">
+					<span>&copy; 2010 - 2021</span>
+					<a href="http://quanticalabs.com" target="_blank">QuanticaLabs</a>
+				</div>
+				<div class="doc-footer-social-icon">
+					<ul>
+						<li><a href="https://themeforest.net/user/quanticalabs?ref=quanticalabs" class="doc-social-icon-envato" target="_blank"></a></li>
+						<li><a href="https://dribbble.com/quanticalabs" class="doc-social-icon-dribbble" target="_blank"></a></li>
+						<li><a href="https://www.behance.net/quanticalabs" class="doc-social-icon-behance" target="_blank"></a></li>
+						<li><a href="https://twitter.com/quanticalabs" class="doc-social-icon-twitter" target="_blank"></a></li>
+						<li><a href="https://www.facebook.com/QuanticaLabs" class="doc-social-icon-facebook" target="_blank"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<input type="hidden" id="open-tabs" value="1" />
+
+		<script src="script/jquery.min.js"></script>
+		<script src="script/jquery-ui.min.js"></script>
+		<script src="script/jquery.scrollTo.min.js"></script>
+		<script src="script/jquery.flexnav.min.js"></script>
+		<script src="script/jquery.waypoints.min.js"></script>
+		<script src="script/sticky.min.js"></script>
+		<script src="script/jquery.fancybox.js"></script>
+		<script src="script/jquery.fancybox-media.js"></script>
+		<script src="script/jquery.fancybox-buttons.js"></script>
+		<script src="script/jquery.easing.js"></script>
+		<script src="script/jquery.doc.js"></script>
+
+		<script>
+
+			jQuery(document).ready(function($)
+			{
+				$().DOC();
+			});
+
+		</script>
+
+	</body>
+
+</html>

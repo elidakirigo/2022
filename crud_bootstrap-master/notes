@@ -1,0 +1,6 @@
+strilen
+
+mysqli_fetch_array
+
+$GLOBAL['user'] = "admin";
+ 

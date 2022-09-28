@@ -1,0 +1,7 @@
+.designious .requirements-outcome .outcome-fail {
+    color: #aa0000;
+}
+
+.designious .requirements-outcome .outcome-success {
+    color: #00aa00;
+}

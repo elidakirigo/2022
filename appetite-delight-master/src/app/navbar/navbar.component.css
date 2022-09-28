@@ -1,0 +1,13 @@
+.navbar {
+    margin: 0;
+    border-radius: 0;
+}
+.container-fluid {
+    padding: 10px;
+}
+.navbar .nav {
+    padding-right: 12em;
+}
+.display {
+    display: none;
+}

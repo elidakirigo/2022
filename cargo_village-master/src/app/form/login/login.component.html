@@ -1,0 +1,12 @@
+    <h2>log in</h2>
+    <div class="alert alert-danger" *ngIf="message.text !== ''">
+      <h3>{{ message.text }}</h3>
+    </div>
+        <form class="con" #loginForm="ngForm" >
+          <label for="Email">Email </label> <br>
+          <input type="email" name="email" class="form-control" placeholder="enter Email" [(ngModel)]="email" />
+          <label>password</label><br>
+          <input placeholder="password" type="password" class="form-control" name="pwd" [(ngModel)]="password" required> <br> <br>
+          <button (click)="submitLogin()">login</button>
+        </form>
+

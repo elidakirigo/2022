@@ -1,0 +1,33 @@
+small {
+  color: red;
+}
+label {
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+input {
+  width: 80% !important;
+}
+form {
+  font-size: 11px;
+}
+h3{
+  font-size: 12px;
+  font-weight: bold;
+  color: gray;
+}
+.cont {
+  border: 1px solid #80808066;
+  border-radius: 3px;
+  margin: 3% 0%;
+  padding: 6px 12px;
+}
+button {
+  padding: 8px 22px !important;
+  font-weight: bold !important;
+  letter-spacing: 1px;
+  margin: 4%;
+}
+input.ng-invalid.ng-dirty {
+  border: 1px solid #3d0c0c !important;
+}

@@ -1,0 +1,77 @@
+body {
+    background: #fff;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+input,
+button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+#signup_div {
+    display: none;
+}
+
+#login_div span,
+#signup_div span {
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    padding: 1em;
+    color: #5daffc;
+}
+
+#login_div span:hover,
+#signup_div span:hover {
+    text-decoration: underline;
+}
+
+.main_div,
+.loggedIn_div {
+    width: 20%;
+    margin: 0px auto;
+    margin-top: 150px;
+    padding: 20px;
+    display: none;
+}
+
+.main_div input {
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #fff;
+    padding: 15px;
+    outline: none;
+    width: calc(100% - 31px);
+    margin-bottom: 20px;
+}
+
+.main_div input:focus {
+    border: 1px solid #5daffc;
+}
+
+.main_div button,
+.loggedIn_div button {
+    background: #5daffc;
+    color: #fff;
+    border: 0px;
+    border-radius: 5px;
+    padding: 15px;
+    display: block;
+    width: 100%;
+    transition: 0.3;
+    -webkit-transition: 0.3;
+    -moz-transition: 0.3;
+}
+
+.main_div button:hover,
+.loggedIn_div button:hover {
+    background: #fff;
+    color: #5daffc;
+    border: 1px solid #5daffc;
+    cursor: pointer;
+}

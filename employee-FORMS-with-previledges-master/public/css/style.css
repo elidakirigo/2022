@@ -1,0 +1,17 @@
+#footer {
+    margin-top : 30px;
+    padding: 10px;
+    color: #fff;
+    background: #0c84e4;
+}
+
+#footer p {
+    margin-bottom: 0px;
+}
+.navbar {
+    background: #0c84e4 !important;
+}
+
+nav .active {
+    background: #025fac !important;
+}

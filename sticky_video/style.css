@@ -1,0 +1,107 @@
+:root {
+  --text_default_color: white;
+  --background: #ccc;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background);
+  font-family: 'Courier New', Courier, monospace;
+  padding: 3rem;
+}
+
+#v0 {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 60%;
+}
+
+#set-height {
+  display: block;
+}
+
+/* animation css */
+.entered {
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.5, 0.53) both;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.5, 0.53) both;
+}
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(0.75rem);
+    filter: blur(0.75rem);
+  }
+
+  100% {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+  }
+}
+
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(0.75rem);
+    filter: blur(0.75rem);
+  }
+
+  100% {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+  }
+}
+
+.container {
+  z-index: 1;
+  position: relative;
+}
+
+.container .content {
+  position: -webkit-sticky;
+  position: sticky;
+  width: 100%;
+  top: 33.3%;
+}
+
+.container h1 {
+  font-size: 3rem;
+  background: #fff;
+  display: inline-block;
+  padding: 0.625rem 0.9375rem;
+  border-radius: 0.3125rem;
+  margin: 0;
+}
+
+.container p {
+  font-size: 1.5rem;
+}
+
+.container:nth-of-type(1) {
+  height: 75rem;
+}
+
+.container:nth-of-type(2) {
+  height: 75rem;
+}
+
+.container:nth-of-type(3) {
+  height: 75rem;
+}
+
+.container:nth-of-type(4) {
+  height: 62.5rem;
+}
+
+.container:nth-of-type(5) {
+  height: 25rem;
+}
+
+/*# sourceMappingURL=style.css.map */

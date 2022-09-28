@@ -1,0 +1,17 @@
+<div class="container">
+  <nav class="navbar navbar-default">
+    <ul class="nav navbar-nav">
+      <li>
+        <a routerLink="list">list</a>
+      </li>
+      <li>
+        <a routerLink="edit/0">create</a>
+      </li>
+      <!-- <li>
+        <a [routerLink]="['/employees', 2]">get employee with id 2</a>
+      </li> -->
+    </ul>
+  </nav>
+  <div *ngIf="showLoadingIndecator" class="spinner"></div>
+  <router-outlet></router-outlet>
+</div>

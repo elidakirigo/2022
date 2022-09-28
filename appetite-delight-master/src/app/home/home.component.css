@@ -1,0 +1,132 @@
+.container ,.row,.col-md-12{
+    margin: 0;
+    padding: 0;
+    width:100%
+}
+
+.img{
+    
+    background:url(/assets/food11.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+}
+.panel {
+    width: 30%;
+}
+
+footer  {
+    background: black;
+    padding: 2em 1em;
+    margin :0;
+    text-align: center;
+}
+.favicon {
+    border: 2px solid white;
+    position: absolute;
+    width: 50%;
+    padding: 4em;
+    margin:2em;
+    border-radius: 2em;
+    background: #00000080;
+}
+.favicon p {
+    color: white;
+    font: 2em cursive;
+}
+.button {
+    background: #9c6600;
+    border-radius: 2em;
+    padding: .6em 1.9em;
+    border: none;
+    position: absolute;
+    left: 20em;
+    font-family: cursive;
+}
+a button {
+    color: aliceblue;
+    text-decoration: none;
+}
+.button:hover {
+    border: 1px solid white;
+    background: transparent;
+    color:white;
+}
+.gallery{
+ padding: 3em 8em;
+}
+.col-md-5 {
+    margin: .8em;
+}
+.gallery img {
+    border: 1px solid white;
+    border-radius: 2em; 
+}
+
+.gallery h3 , .gallery button {
+    z-index : 1;
+    text-align: center;
+}
+.gallery button {
+    position: absolute;
+    bottom:30px;
+    width: 50%;
+    background: #d88c00;
+    color: wheat;
+    cursor: text;
+}
+.gallery h3 {
+    color: white;
+    padding: 3em 6em;
+    text-align: right !important;
+    font-size: 13px;
+    font-style: italic;
+    background: #000000c0;
+    border: 2px solid white;
+    border-radius: 2px;
+    padding: 4mm;
+}
+@media (min-width : 800px) {
+    .favicon {
+    top:160px;
+    left: 130px;
+    }
+}
+@media (max-width : 800px)
+{
+    .img {
+        height: 70vh;
+    }
+    .button {
+        padding: .6em 1em;
+        left: 3em;
+    }
+    .favicon {
+        position: absolute;
+        width: 80%;
+        padding: 3.5em 2em;
+        margin:2em;
+    }
+    .favicon p {
+        font: 1em cursive;
+    }
+    .gallery button {
+        position: absolute;
+        bottom:30px;
+        width: 50%;
+        background: #d88c00;
+        color: wheat;
+        cursor: text;
+    }
+}
+@media (max-width : 570px)
+{
+    .gallery h3 {
+        display: none;
+    }
+    .img {
+        height: 50vh;
+    }
+}

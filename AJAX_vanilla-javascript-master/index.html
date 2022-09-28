@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AJAX and JSON PLUS PHP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <button id="button">GET name</button>
+    <hr>
+    <h1>GET FORM</h1>
+    <form action="process.php" method="get">
+        <input type="text" name="name">
+        <input type="submit" value="Submit">
+    </form>
+    <h1>AJAX GET FORM</h1>
+    <form id="getForm">
+        <input type="text" name="name" id="name1">
+        <input type="submit" value="Submit">
+    </form>
+    <script>
+        document.getElementById("button").addEventListener("click", getName);
+
+        function getName()
+        {
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "index.php?name=brad", true);
+            xhr.send();
+
+            xhr.onload = function()
+            {
+                console.log(this.responseText);
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<app-navbar></app-navbar>
+<div>
+    <div class="container">
+        <div class="alert alert-success" *ngIf="message.text !== ''">
+            <h3>{{ message.text }}</h3>
+        </div>
+        <form *ngIf="!(authService.user | async)" #login="ngForm">
+            <h2 style="background: plum;">log in</h2>
+            <label for="Email">Email </label> <br>
+            <input type="email" name="Email" class="form-control" placeholder="enter email" #Email ngModel required/>
+            <label>password</label><br>
+            <input placeholder="password" type="password" class="form-control" name="password" #password ngModel required/> <br> <br>
+            <button type="button" (click)="logedin(Email.value, password.value)" style="background: orangered;">login</button><br><br>
+            <span (click)="changeOne()">or sign up?</span><br><br>
+            <span>forgot password?</span>
+        </form>
+    </div>
+    <div class="container x">
+        <div class="alert alert-success" *ngIf="message.text !== ''">
+            <h3>{{ message.text }}</h3>
+        </div>
+        <form #login="ngForm" *ngIf="!(authService.user | async)">
+            <h2 style="background: yellow;">sign up</h2>
+            <label for="Email">Email </label> <br>
+            <input type="email" name="Email" class="form-control" placeholder="enter email" #Email ngModel required/>
+            <label>password</label><br>
+            <input placeholder="password" type="password" class="form-control" name="password" #password ngModel required/> <br> <br>
+            <button type="button" (click)="signup(Email.value, password.value)" style="background: orange;">sign up</button><br><br>
+            <span (click)="changeTwo()">or log in?</span>
+        </form>
+    </div>
+</div>

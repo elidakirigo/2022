@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <div id="login_div" class="main_div">
+            <h3>firebase web login Example</h3>
+            <input type="email" name="email" placeholder="Email..." id="email_field" />
+            <input type="password" name="pass" placeholder="password..." id="password_field" />
+
+            <button type="submit" onclick="login()">login to Account</button>
+            <span onclick="hideForm(1)">or sign up</span>
+        </div>
+    </form>
+    <form>
+        <div id="signup_div" class="main_div">
+            <h3>firebase web signup Example</h3>
+            <input type="email" name="email" placeholder="Email..." id="email_field_1" />
+            <input type="password" name="pass" placeholder="password..." id="password_field_2" />
+
+            <button type="submit" onclick="signup()">signup to Account</button>
+            <span onclick="hideForm(0)">back to login</span>
+
+        </div>
+    </form>
+    <div id="user_div" class="loggedIn_div">
+        <h3>welcome user</h3>
+        <p>welcome to firebase web login example. You're currentlty logged in</p>
+        <button>logout</button>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-firestore.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-auth.js"></script>
+
+    <script src="js/firebase.js"></script>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>

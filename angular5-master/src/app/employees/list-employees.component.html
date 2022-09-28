@@ -1,0 +1,25 @@
+<!-- <h1 *ngIf="dataFromChild">
+   {{ dataFromChild?.name + ' ' + dataFromChild?.gender }} employeeFilter: searchTerm
+</h1> -->
+<div class="form-group">
+   <input type="text" class="form-control" placeholder="Search by Name" [(ngModel)]="searchTerm" />
+</div>
+<!-- <div class="form-group">
+   <button class="btn btn-primary" (click)="changeEmployeeName()">change employee Name</button>
+</div> -->
+
+<div *ngFor="let employee of filteredEmployees ">
+   <!-- <div (click)="onClick(employee.id)"class="pointCursor">   -->
+
+    <app-display-employee (notifyDelete)="onDeleteNotification($event)" [employee]="employee" [searchTerm]="searchTerm"></app-display-employee>
+
+   <!-- </div> -->
+</div>
+<div *ngIf="error">
+   {{ error }}
+</div>
+<!-- (notify)="handleNotify($event)" -->
+<!-- <button (click)="nextEmployee()" class="btn btn-primary"> view next employee </button>
+<br>
+<br>
+<app-display-employee [employee]="employeeToDisplay" [employeeId]="employeeToDisplay.id"></app-display-employee> -->

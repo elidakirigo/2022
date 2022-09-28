@@ -1,0 +1,97 @@
+/******************************************************************************/
+/* Import																	  */
+/******************************************************************************/
+
+@import "icon.css";
+
+/******************************************************************************/
+/* Icon dropdown list														  */
+/******************************************************************************/
+
+div.dk_container select
+{
+	max-width:0;
+}
+
+#dk_container_cbs_icon .dk_options_inner a
+{
+	width:100%;
+	height:80px;
+	display:table;
+	box-sizing:border-box;
+	vertical-align:middle;
+}
+
+	#dk_container_cbs_icon .dk_options_inner a *
+	{
+		width:50%;
+		display:table-cell;
+		vertical-align:middle;
+	}
+	
+		#dk_container_cbs_icon .dk_options_inner a span
+		{
+			
+		}
+	
+		#dk_container_cbs_icon .dk_options_inner a span+span
+		{
+			text-align:right;
+		}
+		
+.type-cbs_vehicle td,
+.type-cbs_vehicle th
+{
+	vertical-align:middle !important;
+}
+
+.post-type-cbs_vehicle .wp-list-table .column-icon,
+.post-type-cbs_vehicle .wp-list-table .column-order
+{
+	width:30% !important;
+}
+
+.post-type-cbs_service .wp-list-table .column-order
+{
+	width:10% !important;
+}
+
+.post-type-cbs_service .wp-list-table .column-detail
+{
+	width:50% !important;
+}
+
+.post-type-cbs_package .wp-list-table .column-order
+{
+	width:10% !important;
+}
+
+.post-type-cbs_package .wp-list-table .column-service
+{
+	width:30% !important;
+}
+
+.post-type-cbs_package .wp-list-table .column-detail
+{
+	width:40% !important;
+}
+
+#posts-filter .tablenav.top .actions span
+{
+	float:left;
+	padding:5px;
+}
+
+/******************************************************************************/
+/* Booking report controls													  */
+/******************************************************************************/
+
+#booking-report-controls
+{
+	
+}
+
+#booking-report-controls input[type='text']
+{
+	width:100px;
+}

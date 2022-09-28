@@ -1,0 +1,378 @@
+/******************************************************************************/
+/* Icon																		  */
+/******************************************************************************/
+
+	/**************************************************************************/
+	/* Icon / Meta															  */
+	/**************************************************************************/
+
+	.cbs-button:before,
+	.cbs-meta-icon
+	{
+		display:inline-block;
+	}
+	
+	.cbs-meta-icon-duration:before 
+	{
+		margin-right:0px;
+		margin-left:4px;
+	}
+	.cbs-meta-icon-price:before 
+	{
+		margin-right:0px;
+		margin-left:4px;
+	}
+
+/******************************************************************************/
+/* Main																		  */
+/******************************************************************************/
+
+	/**************************************************************************/
+	/* Main / List															  */
+	/**************************************************************************/
+	
+				.cbs-main .cbs-main-list>li.cbs-main-list-item>div.cbs-main-list-item-section-header>.cbs-main-list-item-section-header-step
+				{
+					float:right;
+				}
+					
+				.cbs-main .cbs-main-list>li.cbs-main-list-item>div.cbs-main-list-item-section-header>.cbs-main-list-item-section-header-header,
+				.cbs-main .cbs-main-list>li.cbs-main-list-item>div.cbs-main-list-item-section-header>.cbs-main-list-item-section-header-subheader
+				{
+					margin:0px 110px 0px 0px;
+				}
+
+/******************************************************************************/
+/* Button																	  */
+/******************************************************************************/
+
+.cbs-button
+{
+	text-align:right;
+}
+
+.cbs-button:before
+{
+	left:25px;
+	right:auto;
+}
+	
+.cbs-state-selected .cbs-button
+{
+	padding-left:50px;
+	padding-right:30px;
+}
+
+/******************************************************************************/
+/* Button																	  */
+/******************************************************************************/
+
+.cbs-more-link
+{
+	direction: rtl;
+	margin-right:10px;
+	margin-left:0px;
+}
+			
+/******************************************************************************/
+/* Vehicle List																  */
+/******************************************************************************/
+
+	.cbs-vehicle-list>li
+	{
+		float:right \9;
+	}
+
+/******************************************************************************/
+/* Package List																  */
+/******************************************************************************/
+
+	.cbs-package-list>li
+	{
+		float:right \9;
+	}
+	
+		.cbs-package-list>li>.cbs-package-duration>.cbs-meta-icon::before
+		{
+			/*display:inline-block;*/
+		}
+	
+		.cbs-package-list>li>div.cbs-button-box
+		{
+			right:0px;
+			left:auto;
+		}
+			
+/******************************************************************************/
+/* Service																	  */
+/******************************************************************************/
+
+	.cbs-service-list>li>div.cbs-service-name>.cbs-title-link
+	{
+		direction:ltr;
+		display:-ms-flexbox;
+		display:-webkit-flex;
+		display:flex;
+		-webkit-flex-direction:row-reverse;
+		-ms-flex-direction:row-reverse;
+		flex-direction:row-reverse;
+	}
+
+		.cbs-service-list>li>div
+		{
+			text-align:right;
+		}
+
+				.cbs-service-list>li>div.cbs-service-name .cbs-more-content
+				{
+					padding-right:0px;
+					padding-left:20px;
+				}
+
+			.cbs-service-list>li>div.cbs-button-box>.cbs-button
+			{
+				float:left;
+			}
+
+				.cbs-main.cbs-width-0 .cbs-service-list>li>div.cbs-service-namee>div.cbs-more-content,
+				.cbs-main.cbs-width-300 .cbs-service-list>li>div.cbs-service-name>div.cbs-more-content,
+				.cbs-main.cbs-width-480 .cbs-service-list>li>div.cbs-service-name>div.cbs-more-content
+				{
+					padding-left:0px;
+					padding-right:0px;
+				}
+				
+			.cbs-main.cbs-width-0 .cbs-service-list>li>div.cbs-service-duration,
+			.cbs-main.cbs-width-300 .cbs-service-list>li>div.cbs-service-duration,
+			.cbs-main.cbs-width-480 .cbs-service-list>li>div.cbs-service-duration
+			{
+				margin-left:10px;
+				margin-right:0px;
+			}
+			
+/******************************************************************************/
+/* Calendar																	  */	
+/******************************************************************************/
+
+	/**************************************************************************/
+	/* Calendar	/ Header													  */	
+	/**************************************************************************/
+	
+		.cbs-calendar-header .cbs-calendar-header-arrow-left
+		{
+			float:right;
+			-moz-transform:scaleX(1);
+			-o-transform:scaleX(1);
+			-webkit-transform:scaleX(1);
+			transform:scaleX(1);
+		}
+		
+		.cbs-calendar-header .cbs-calendar-header-arrow-right
+		{
+			float:left;
+			-moz-transform:scaleX(-1);
+			-o-transform:scaleX(-1);
+			-webkit-transform:scaleX(-1);
+			transform:scaleX(-1);
+		}
+		
+		.cbs-calendar-header .cbs-calendar-header-caption .cbs-calendar-header-month-arrow-left
+		{
+			-moz-transform:scaleX(1);
+			-o-transform:scaleX(1);
+			-webkit-transform:scaleX(1);
+			transform:scaleX(1);
+		}
+		
+		.cbs-calendar-header .cbs-calendar-header-caption .cbs-calendar-header-month-arrow-right
+		{
+			-moz-transform:scaleX(-1);
+			-o-transform:scaleX(-1);
+			-webkit-transform:scaleX(-1);
+			transform:scaleX(-1);
+		}
+		
+	/**************************************************************************/
+	/* Calendar	/ Subheader													  */	
+	/**************************************************************************/
+	
+		.cbs-calendar .cbs-calendar-subheader .cbs-calendar-subheader-day-number
+		{
+			float:right;
+		}	
+
+		.cbs-calendar .cbs-calendar-subheader .cbs-calendar-subheader-day-name
+		{
+			float:left;
+		}
+	
+
+/******************************************************************************/
+/* Booking summary															  */
+/******************************************************************************/
+
+	.cbs-booking-summary>li
+	{
+		float:right;
+		text-align:left;
+	}
+	
+	.cbs-booking-summary>li.cbs-booking-summary-date,
+	.cbs-booking-summary>li.cbs-booking-summary-duration
+	{
+		float:right;
+	}
+	
+	.cbs-booking-summary>li.cbs-booking-summary-time,
+	.cbs-booking-summary>li.cbs-booking-summary-price
+	{
+		float:left;
+	}
+	
+		.cbs-booking-summary>li.cbs-booking-summary-duration>h5
+		{
+			direction:ltr;
+			display:-ms-flexbox;
+			display:-webkit-flex;
+			display:flex;
+			-webkit-flex-direction:row-reverse;
+			-ms-flex-direction:row-reverse;
+			flex-direction:row-reverse;
+			-webkit-justify-content:flex-end;
+			-ms-flex-pack:end;
+			justify-content:flex-end;
+		}
+		
+		.cbs-booking-summary>li.cbs-booking-summary-duration>h5>span
+		{
+			margin-right:5px;
+		}
+		
+		.cbs-booking-summary>li>.cbs-meta-icon
+		{
+			float:right;
+		}
+
+/******************************************************************************/
+/* Tabs																		  */
+/******************************************************************************/
+
+		.cbs-to-tab.ui-tabs .ui-tabs-nav li
+		{
+			float:right;
+			margin: 1px 0 0 .2em;
+		}
+
+		.cbs-to-tab.ui-tabs .ui-tabs-nav li:last-child
+		{
+			float:left;
+			margin-left:0;
+		}
+
+/******************************************************************************/
+/* Form																		  */
+/******************************************************************************/
+
+	.cbs-form .cbs-form-field
+	{
+		float:right;
+	}
+	
+	.cbs-form .cbs-form-summary
+	{
+		float:right;
+	}
+	
+	.cbs-form .cbs-form-field.cbs-form-width-33+.cbs-form-width-33,
+	.cbs-form .cbs-form-field.cbs-form-width-50+.cbs-form-width-50
+	{
+		border-left-width:1px;
+		border-right-width:0px;
+	}
+	
+	.cbs-main.cbs-width-0 .cbs-form .cbs-form-field.cbs-form-width-33,
+	.cbs-main.cbs-width-0 .cbs-form .cbs-form-field.cbs-form-width-50,
+	.cbs-main.cbs-width-300 .cbs-form .cbs-form-field.cbs-form-width-33,
+	.cbs-main.cbs-width-300 .cbs-form .cbs-form-field.cbs-form-width-50,
+	.cbs-main.cbs-width-480 .cbs-form .cbs-form-field.cbs-form-width-33,
+	.cbs-main.cbs-width-480 .cbs-form .cbs-form-field.cbs-form-width-50
+	{
+		border-right-width:1px;
+	}
+
+/******************************************************************************/
+/* Coupon code																  */
+/******************************************************************************/
+
+.cbs-form .cbs-coupon-code
+{
+	text-align:right;
+}
+
+	.cbs-form .cbs-coupon-code input[name="coupon_code"]
+	{
+		margin-right:10px;
+		margin-left:0px;
+	}
+	
+	.cbs-form .cbs-coupon-code a.cbs-button-apply-coupon
+	{
+		margin-right:10px;
+		margin-left:0px;
+	}
+
+/******************************************************************************/
+/* Register																	  */
+/******************************************************************************/
+
+.cbs-register
+{
+	text-align:right;
+}
+
+/******************************************************************************/
+/* Notice																	  */
+/******************************************************************************/
+
+	.cbs-notice .cbs-notice-content
+	{
+		margin-right:20px;
+		margin-left:0px;
+	}
+	
+	.cbs-width-0 .cbs-notice .cbs-notice-content
+	{
+		margin-right:0px;
+		margin-left:0px;
+	}
+
+/******************************************************************************/
+/* Responsive																  */
+/******************************************************************************/
+
+	/**************************************************************************/
+	/* Responsive / 1189													  */
+	/**************************************************************************/
+
+	@media screen and (max-width:1189px)
+	{
+		
+		.cbs-main .cbs-main-list>li.cbs-main-list-item>div.cbs-main-list-item-section-header>.cbs-main-list-item-section-header-header, 
+		.cbs-main .cbs-main-list>li.cbs-main-list-item>div.cbs-main-list-item-section-header>.cbs-main-list-item-section-header-subheader
+		{
+			margin:0px 95px 0px 0px;
+		}
+
+	}
+	
+	/**************************************************************************/
+	/* Responsive / 479														  */
+	/**************************************************************************/
+
+	@media screen and (max-width:479px)
+	{	
+		.cbs-to-tab.ui-tabs .ui-tabs-nav li:last-child
+		{
+			float:right;
+		}
+	}

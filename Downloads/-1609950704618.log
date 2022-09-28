@@ -1,0 +1,9 @@
+wifi.js:46 Connnecting...
+wifi.js:133 0
+wifi.js:52 WebSocket Client Connected
+wifi.js:80 [{…}]0: {Channel: 40, SSID: "EM_guest", RSSI: "-49", Encrypted: "True"}length: 1__proto__: Array(0)
+wifi.js:80 [{…}]
+wifi.js:80 [{…}]
+wifi.js:80 [{…}]
+wifi.js:80 [{…}]0: {Channel: 1, SSID: "EM_guest", RSSI: "-45", Encrypted: "True"}length: 1__proto__: Array(0)
+wifi.js:60 closed connection

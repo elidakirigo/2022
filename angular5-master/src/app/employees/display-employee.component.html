@@ -1,0 +1,95 @@
+<app-accordion [title]="employee.name" [hasJustViewed]="selectedEmployeeId === employee.id" [isHidden]="true">
+     <div class="col-xs-10 myPanelBody">
+             <div class="row">
+                <div class="col-xs-4">
+                    <img class="imageClass" [src]='employee.photoPath'/>
+                </div>
+                <div class="col-xs-8">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            Gender 
+                        </div>
+                        <div class="col-xs-6">
+                            {{ employee.gender }}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            date of birth 
+                        </div>
+                        <div class="col-xs-6">
+                            {{ employee.dateOfBirth | date }}
+                        </div>
+                   </div>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            contact preference 
+                        </div>
+                        <div class="col-xs-6">
+                            {{ employee.ContactPreference }}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            phone 
+                        </div>
+                        <div class="col-xs-6">
+                            {{ employee.phoneNumber }}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            email 
+                        </div>
+                        <div class="col-xs-6">
+                            {{ employee.email }}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            department 
+                        </div>
+                        <div class="col-xs-6" [ngSwitch]="employee.department">
+                            :
+                            <span *ngSwitchCase="1">help desk</span>
+                            <span *ngSwitchCase="2">HR</span>
+                            <span *ngSwitchCase="3">IT</span>
+                            <span *ngSwitchCase="4">payroll</span>
+                            <span *ngSwitchDefault>N/A</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            is active 
+                        </div>
+                        <div class="col-xs-6">
+                            {{ employee.isActive }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="myPanelFooter">
+            <button class="btn btn-primary" (click)="viewEmployee()">view</button>
+            <button class="btn btn-primary" (click)="editEmployee()">Edit</button>
+            <span *ngIf="confirmDelete">
+                <span >are you sure you want to delete?</span>
+                    <button class="btn btn-danger" (click)="deleteEmployee()">yes</button>
+                    <button class="btn btn-primary" (click)="confirmDelete=false">no</button>
+                </span>
+            <button *ngIf="!confirmDelete" class="btn btn-danger" (click)="confirmDelete=true">Delete</button>
+        </div>
+</app-accordion>
+
+<!-- <div class="panel panel-primary" [class.panel-success]="selectedEmployeeId === employee.id" (click)="handleClick()">
+    <div class="panel-heading pointerCursor">
+        <h3 class="panel-title">{{ employee.name | uppercase  }}</h3>
+    </div>
+    <div class="panel-body" >
+       
+    </div>
+    <div class="panel-footer" >
+      
+    </div>
+</div>
+ [hidden]="isHidden"[hidden]="isHidden" (click)="isHidden = !isHidden" -->

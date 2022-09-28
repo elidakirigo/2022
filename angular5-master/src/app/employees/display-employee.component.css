@@ -1,0 +1,8 @@
+ .btn {
+    width: 170px;
+    margin-right: 7px;
+}
+
+.pointerCursor {
+    cursor: pointer;
+}

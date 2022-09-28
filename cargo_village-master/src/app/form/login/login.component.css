@@ -1,0 +1,25 @@
+input {
+  width: 70% !important;
+}
+form {
+  font-size: 11px;
+}
+.con{
+  border: 1px solid #8080806f;
+  border-radius: 3px;
+  margin: 3%;
+  padding: 3%;
+}
+button {
+  padding: 8px 22px !important;
+  font-weight: bold !important;
+  letter-spacing: 1px;
+  margin: 4%;
+  border: none;
+  border-radius: 3px;
+  background: #ff0000;
+}
+
+input.ng-invalid.ng-dirty {
+  border: 1px solid #3d0c0c !important;
+}

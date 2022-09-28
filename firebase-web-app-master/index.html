@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="fav/j.jpg" type="image/x-icon">
+  <title>firebase ~ complete </title>
+</head>
+
+<body>
+  <!-- -------------------------------------section one------------------------------- -->
+
+  <div class="mainDiv" align="right">
+    <h1 align="left" id="fireHeading">firebase web app</h1>
+    <textarea id="main_text" placeholder="enter text here"></textarea>
+    <button id="button" onclick="submitClick()">
+      <i class="fa fa-arrow-right" aria-hidden="true"></i>
+    </button>
+  </div>
+
+  <!-- -------------------------------------section two------------------------------- -->
+  <section>
+    <h1>all users</h1>
+    <table class="table table-light">
+      <thead>
+        <tr>
+          <th>name</th>
+          <th>email</th>
+          <th>action</th>
+        </tr>
+      </thead>
+      <tbody id="table-body">
+      </tbody>
+    </table>
+  </section>
+
+  <!-- scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-firestore.js"></script>
+  <script src="js/firebase.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
